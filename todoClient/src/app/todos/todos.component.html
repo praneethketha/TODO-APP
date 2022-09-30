@@ -1,0 +1,15 @@
+<div class="todos_container" *ngFor="let todo of todos">
+  <app-single-todo [todo]="todo">
+    <section class="action_container">
+      <p (click)="firePopulate(todo)">
+        <i class="fa fa-pencil edit" aria-hidden="true"></i>
+      </p>
+      <p (click)="fireComplete(todo)">
+        <i class="fa fa-check complete" aria-hidden="true"></i>
+      </p>
+      <p (click)="fireDelete(todo.id)">
+        <i class="fa fa-trash delete" aria-hidden="true"></i>
+      </p>
+    </section>
+  </app-single-todo>
+</div>

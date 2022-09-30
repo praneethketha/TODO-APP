@@ -1,0 +1,39 @@
+:host {
+  width: 400px;
+}
+.todos_container {
+  padding: 0;
+  margin: 0;
+  border-radius: 0.25rem;
+}
+
+.action_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.action_container p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.action_container p i{
+  font-size: 14px;
+}
+
+.edit{
+  color: #4169e1;
+}
+
+.complete{
+  color: #3cb371;
+}
+
+.delete{
+  color: #b22222;
+}

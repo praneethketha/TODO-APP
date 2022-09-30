@@ -1,0 +1,18 @@
+.todo_container {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo_container p {
+  margin: 0;
+  color: #333;
+}
+
+.completed{
+  text-decoration: line-through !important;
+  color: #777 !important;
+}

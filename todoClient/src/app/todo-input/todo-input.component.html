@@ -1,0 +1,27 @@
+<form
+  #todo_form="ngForm"
+  class="input_container"
+  (ngSubmit)="fireSubmit(todo.id); todo_form.resetForm()"
+>
+  <input
+    #currenttodo="ngModel"
+    type="text"
+    name="todo"
+    id="todo"
+    placeholder="Eg: learn Java"
+    [(ngModel)]="todo.title"
+    required
+    minlength="4"
+  />
+  <button
+    class="btn"
+    type="submit"
+    [disabled]="todo_form.invalid"
+    [ngClass]="{ disable: todo_form.invalid }"
+  >
+    {{ todo.id ? "Edit" : "Add" }}
+  </button>
+</form>
+<p *ngIf="currenttodo.errors && currenttodo.dirty" class="error">
+  Please enter atleast 4 characters
+</p>

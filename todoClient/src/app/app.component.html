@@ -1,0 +1,18 @@
+<h3>TODO APP</h3>
+<app-todo-input [todo]="todo" (submit)="handleSubmit($event)"></app-todo-input>
+<form class="select_form">
+  <select name="todo" id="todo" [(ngModel)]="searchTerm">
+    <option value="">all</option>
+    <option value="true">completed</option>
+    <option value="false">pending</option>
+  </select>
+</form>
+<p *ngIf="!todos.length" class="no_todos">No todos to display!!!</p>
+<app-todos
+  [searchTerm]="searchTerm"
+  [todos]="todos"
+  (populate)="populateTodo($event)"
+  (complete)="completeTodo($event)"
+  (delete)="deleteTodo($event)"
+  (get)="getTodos($event)"
+></app-todos>

@@ -1,0 +1,11 @@
+@import "~font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+  margin: 5rem;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+}
